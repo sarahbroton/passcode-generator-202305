@@ -94,7 +94,7 @@ This includes:
 ## Mock-up (Screenshot)
 - The following image shows the web application's appearance and functionality. 
 
-<img src=https://user-images.githubusercontent.com/130716239/238104476-2f87696b-3780-4024-a515-40b37666a806.png
+<img src=https://user-images.githubusercontent.com/130716239/238104476-2f87696b-3780-4024-a515-40b37666a806.png>
 
 ## Link
 
