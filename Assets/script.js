@@ -11,11 +11,21 @@ function writePassword() {
 
   passwordText.value = password;
 
-    const input = prompt(); 
-    alert(input); 
+  var popup = {
+    chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ"; 
+    passwordLength = ; 
+    to
+  }
 
-    if(confirm("How many characters would you like your password to contain?"))
-      console.log('ok'); 
+    console.log(popup); 
+
+  if
+
+    // const input = prompt(); 
+    // alert(input); 
+
+    // if(confirm("How many characters would you like your password to contain?"))
+    //   console.log('ok'); 
 
 // function genPassword() {
 //   var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ"; 
@@ -46,5 +56,5 @@ generateBtn.addEventListener("click", writePassword);
 // function copyPassword() {
 //   var copyText = document.getElementById("password");
 //   copyText.select();
-//   document.execCommand("copy");  
-// }
+//   document.execCommand("copy"); 
+// }; 

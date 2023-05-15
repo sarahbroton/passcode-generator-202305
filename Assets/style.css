@@ -1,3 +1,4 @@
+/* BOXES AROUND EACH SECTION */
 *,
 *::before,
 *::after {
@@ -14,7 +15,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #f9fbfd;  
 }
 
 .wrapper {
@@ -23,6 +24,7 @@ body {
   padding-right: 20px;
 }
 
+/* passwood generator header */
 header {
   text-align: center;
   padding: 20px;
@@ -30,6 +32,7 @@ header {
   color: hsl(206, 17%, 28%);
 }
 
+/* box around generate a password and to underneath generate password button "box" */
 .card {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
@@ -42,6 +45,7 @@ header {
   padding: 30px 40px;
 }
 
+/* space between generate a password and top of dashed "secure password" box */
 .card-header::after {
   content: " ";
   display: block;
@@ -50,14 +54,17 @@ header {
   height: 2px;
 }
 
+/* "your secure password" dashed box */
 .card-body {
-  min-height: 100px;
+  min-height: 100px;  
 }
 
+/* "generate password" button - box around */
 .card-footer {
   text-align: center;
 }
 
+/* space between bottom of dashed "your secure password" box and above generate password button */
 .card-footer::before {
   content: " ";
   display: block;
@@ -66,12 +73,14 @@ header {
   height: 2px;
 }
 
+  /* small blank box underneath generate password button */
 .card-footer::after {
   content: " ";
   display: block;
   clear: both;
 }
 
+/* button only - "generate password" */
 .btn {
   border: none;
   background-color: hsl(360, 91%, 36%);
@@ -88,15 +97,18 @@ header {
   cursor: pointer;
 }
 
+/*  ? */
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
 }
 
+/* ? */
 .float-right {
-  float: right;
+  float: right; 
 }
 
+/* box around dashed box "your secure password" */
 #password {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -127,7 +139,6 @@ button[disabled] {
 
   #password {
     font-size: 1rem;
-  }
 }
 
 @media (max-width: 500px) {
