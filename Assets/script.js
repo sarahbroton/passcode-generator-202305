@@ -10,16 +10,51 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
+}
 
-  var popup = {
-    chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ"; 
-    passwordLength = ; 
-    to
-  }
+function popupInfo() {
+  var specialCharacters = confirm("Do you want special characters?");
+  var passwordLength = parseInt (prompt ("Choose between 8 and 128 characters in length."), 10)
+    // console.log(passwordLength); 
+    // console.log(typeof passwordLength); 
+    var passwordChoices = {
+      length: passwordLength, 
+      specialCharacters: specialCharacters, 
 
-    console.log(popup); 
 
-  if
+    }; 
+    return passwordChoices
+
+}
+
+
+    // console.log(popupInfo()); 
+
+  
+
+
+// global
+//   var numbers [array]; 
+//   var uppcase [array]; 
+//   var lowercase [array]; 
+
+
+//   concat (arrays + arrays)
+//   print array as string
+
+// *ask # of characters, first
+
+
+  // var popup = {
+  //   chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ"; 
+  //   passwordLength = ; 
+  //   .toUppercase; 
+  // }
+
+  //   console.log(popup); 
+
+// if
+
 
     // const input = prompt(); 
     // alert(input); 
@@ -27,10 +62,6 @@ function writePassword() {
     // if(confirm("How many characters would you like your password to contain?"))
     //   console.log('ok'); 
 
-// function genPassword() {
-//   var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ"; 
-//   var passwordLength = ""
-// }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
