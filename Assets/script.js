@@ -14,16 +14,16 @@ function writePassword() {
 }
 
 function popupInfo() {
-  while(true){
+  while (true) {
     var passwordLength = parseInt(prompt("Choose between 8 and 128 characters in length."), 10);
     if (passwordLength < 8 || passwordLength > 129) {
-      alert("Invalid password length. Password needs to be greater than 8 and less than 129");
+      alert("Invalid password length. Password needs to be greater than 8 and less than 129 characters.");
     }
-    else{
+    else {
       break
     }
   }
-  console.log("passwordLength", passwordLength); 
+  console.log("passwordLength", passwordLength);
   var specialCharacters = confirm("Do you want special characters?");
   console.log("specialCharacter", specialCharacters)
   var numericCharacters = confirm("Do you want numeric characters?");
@@ -46,6 +46,24 @@ function popupInfo() {
 
 }
 
+// var passwordChoices=documen.getElementByID("password"); 
+
+// function generatePassword(){
+// var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+// for (var i = 0; i <=passwordLength; i++) {
+//   var randomNumber = Math.floor(Math.random() * chars.passwordLength); 
+//   password += chars.substring(randomNumber, randomNumber +1); 
+// }
+// }
+// document.getElementById("password").value = password; 
+
+// function copyPassword() {
+//   var copyText = document.getElementById("password"); 
+//   copyText.select(); 
+//   document.execCommand("copy"); 
+
+// }
+
 // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", writePassword);
 
