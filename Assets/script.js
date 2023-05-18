@@ -46,22 +46,24 @@ function popupInfo() {
 
 }
 
+function generatePassword(){
+  // var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 for (index = 0; index < this.passwordLength; index++) {
   this.password +=
-  this.generatePassword[Math.floor((math.random()*this.passwordLength)*specialCharacters*numericCharacters*lowercaseCharacters*uppercaseCharacters)]
+  this.generatePassword[Math.floor((math.random()* this.passwordLength)*specialCharacters*numericCharacters*lowercaseCharacters*uppercaseCharacters)]
 }
 
 document.getElementById("password").value=this.passwordChoices
 
 // var passwordChoices=document.getElementByID("password"); 
 
-function generatePassword(){
-var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-for (var i = 0; i <=passwordLength; i++) {
-  var randomNumber = Math.floor(Math.random() * chars.passwordLength); 
-  password += chars.substring(randomNumber, randomNumber +1); 
-}
-}
+// function generatePassword(){
+// var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+// for (var i = 0; i <=passwordLength; i++) {
+//   var randomNumber = Math.floor(Math.random() * chars.passwordLength); 
+//   password += chars.substring(randomNumber, randomNumber +1); 
+// }
+// }
 // document.getElementById("password").value = password; 
 
 // function copyPassword() {
@@ -73,4 +75,4 @@ for (var i = 0; i <=passwordLength; i++) {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
+}
