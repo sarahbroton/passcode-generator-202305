@@ -1,5 +1,5 @@
 // Assignment code here
-var passwordLength = (passwordLength <8 || passwordLength >129); 
+var passwordLength; 
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -15,7 +15,7 @@ function writePassword() {
 
 function popupInfo() {
   while (true) {
-    var passwordLength = parseInt(prompt("Choose between 8 and 128 characters in length."), 10);
+    passwordLength = parseInt(prompt("Choose between 8 and 128 characters in length."), 10);
     if (passwordLength < 8 || passwordLength > 129) {
       alert("Invalid password length. Password needs to be greater than 8 and less than 129 characters.");
     }
