@@ -46,6 +46,13 @@ function popupInfo() {
 
 }
 
+for (index = 0; index < this.passwordLength; index++) {
+  this.password +=
+  this.passwordChoices[Math.floor((math.random()*this.passwordLength)*specialCharacters*numericCharacters*lowercaseCharacters*uppercaseCharacters)]
+}
+
+document.getElementById("password").value=this.passwordChoices
+
 // var passwordChoices=documen.getElementByID("password"); 
 
 // function generatePassword(){
