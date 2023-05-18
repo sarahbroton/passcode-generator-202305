@@ -1,5 +1,5 @@
 // Assignment code here
-
+var passwordLength = (passwordLength <8 || passwordLength >129); 
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -9,7 +9,7 @@ generateBtn.onclick = popupInfo;
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
+  
   passwordText.value = password;
 }
 
@@ -48,20 +48,20 @@ function popupInfo() {
 
 for (index = 0; index < this.passwordLength; index++) {
   this.password +=
-  this.passwordChoices[Math.floor((math.random()*this.passwordLength)*specialCharacters*numericCharacters*lowercaseCharacters*uppercaseCharacters)]
+  this.generatePassword[Math.floor((math.random()*this.passwordLength)*specialCharacters*numericCharacters*lowercaseCharacters*uppercaseCharacters)]
 }
 
 document.getElementById("password").value=this.passwordChoices
 
-// var passwordChoices=documen.getElementByID("password"); 
+// var passwordChoices=document.getElementByID("password"); 
 
-// function generatePassword(){
-// var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-// for (var i = 0; i <=passwordLength; i++) {
-//   var randomNumber = Math.floor(Math.random() * chars.passwordLength); 
-//   password += chars.substring(randomNumber, randomNumber +1); 
-// }
-// }
+function generatePassword(){
+var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+for (var i = 0; i <=passwordLength; i++) {
+  var randomNumber = Math.floor(Math.random() * chars.passwordLength); 
+  password += chars.substring(randomNumber, randomNumber +1); 
+}
+}
 // document.getElementById("password").value = password; 
 
 // function copyPassword() {
@@ -69,7 +69,7 @@ document.getElementById("password").value=this.passwordChoices
 //   copyText.select(); 
 //   document.execCommand("copy"); 
 
-// }
+// }image.png
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
