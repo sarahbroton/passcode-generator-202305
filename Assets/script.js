@@ -15,7 +15,7 @@ function popupInfo() {
       alert("Invalid password length. Password needs to be greater than 8 and less than 129 characters.");
       popupInfo(); 
     }
-    console.log("passwordLength", passwordLength);
+    // console.log("passwordLength", passwordLength);
 
   //   else {
   //     break
@@ -23,16 +23,16 @@ function popupInfo() {
   // }
   
     var specialCharacters = confirm("Do you want special characters?");
-  console.log("specialCharacter", specialCharacters)
+  // console.log("specialCharacter", specialCharacters)
 
   var numericCharacters = confirm("Do you want numeric characters?");
-  console.log("numericCharacter", numericCharacters)
+  // console.log("numericCharacter", numericCharacters)
 
   var lowercaseCharacters = confirm("Do you want lowercase characters?");
-  console.log("lowercaseCharacter", lowercaseCharacters)
+  // console.log("lowercaseCharacter", lowercaseCharacters)
 
   var uppercaseCharacters = confirm("Do you want uppercase characters?");
-  console.log("uppercaseCharacter", uppercaseCharacters)
+  // console.log("uppercaseCharacter", uppercaseCharacters)
 
   var passwordChoices = {
     passwordLength: passwordLength,
@@ -43,13 +43,15 @@ function popupInfo() {
 
   };
 
-  console.log(passwordChoices);
+  // console.log(passwordChoices);
   return passwordChoices;   
 
 }
 
+
 function generatePassword(){
   var options = popupInfo()
+  console.log(options.passwordLength); 
     if (options.specialCharacters){
       chars+="!@#$%^&%*()"
     }
@@ -57,10 +59,19 @@ function generatePassword(){
       chars+= "1234567890"
     }
     if(options.lowercaseCharacters) {
-      chars+- "abcdefghijklmnopqrstuvwxyz"
+      chars+= "abcdefghijklmnopqrstuvwxyz"
     }
     if(options.uppercaseCharacters){
-      chars+- "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+      chars+= "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    }
+
+    // console.log(chars.split("")); 
+
+    var characterBank = chars.split(""); 
+
+    for (let index = 0; index < array.length; index++) {
+      const element = array[index];
+      
     }
 
   var password = ""
@@ -101,7 +112,7 @@ function generatePassword(){
 
 
 // Add event listener to generate button
-  return options;
+  return chars;
 }
 
 function writePassword() {
