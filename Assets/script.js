@@ -67,12 +67,18 @@ function generatePassword(){
 
     // console.log(chars.split("")); 
 
+    var passwordArray = []; 
     var characterBank = chars.split(""); 
+    console.log(characterBank.length); 
+    // 
 
-    for (let index = 0; index < array.length; index++) {
-      const element = array[index];
-      
+    for (let index = 0; index < options.passwordLength; index++) {
+      var randomIndex = Math.floor((Math.random()*characterBank.length)); 
+      const element = characterBank[randomIndex];
+      passwordArray.push(element); 
     }
+
+    console.log(passwordArray.join("")); 
 
   var password = ""
   // wrap in a for loop and run it as many times as passwordLength
