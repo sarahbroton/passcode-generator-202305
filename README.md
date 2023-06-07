@@ -91,17 +91,13 @@ This includes:
     Repository contains multiple descriptive commit messages.
 
     Repository contains a quality readme with description, screenshot, link to deployed application.
->
-5. Some limitations apply:
-
- <!  --ADD LIMITATIONS CRITERIA-->       
+     
 
 ## Credits
 - complied by SBroton
 - Last updated May 2023
 - With the assistance from Tutors, TA's, AskBSC, and w3schools.com
 - With additional research learned from WDS: Web Dev Simplified (https://www.youtube.com/@WebDevSimplified)
-- 
 - Other sources may apply, see GitHub under resolved issues
 
 ## License
